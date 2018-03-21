@@ -1,11 +1,13 @@
 var React = require('react');
+var Nav = require('Nav');
 
 var Main = (props) => {
   return (
     <div>
-      <div>
-        <div>
-          <p>Main.jsx Rendered</p>
+      <Nav />
+      <div className="row">
+        <div className="columns medium-6 large-4 small-centered">
+          <p>React Timer App</p>
           {props.children}
         </div>
       </div>
